@@ -180,7 +180,7 @@
     background-color: #eae4ea86;
     text-align: center;
     box-sizing: border-box;
-    
+}
 /* header */ 
 .contenedorpadre {
     display: flex;
@@ -299,5 +299,8 @@ h1 {
 /*footer*/
 /*Telefonos*/ 
 @media(max-width: 420px){
+    
+/* detalleseries*/
+
 
 }
