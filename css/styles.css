@@ -119,9 +119,6 @@
     #blanco {
         color: #f1f0f0;
     }
-
-  
-
   .Favoritos {
     width: 50px;
   }
@@ -162,7 +159,6 @@
     border-style: double;
     border-color: #a00fa0;
 }
-
 #bodyyy {
     
     background-color: #000;
@@ -180,7 +176,7 @@
     background-color: #eae4ea86;
     text-align: center;
     box-sizing: border-box;
-    
+}
 /* header */ 
 .contenedorpadre {
     display: flex;
@@ -195,6 +191,10 @@
 }
 .nav {
     justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family:'Quicksand', sans-serif ;
 }
 .hija {
     display: flex;
@@ -204,23 +204,26 @@
 .todos {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    font-size: 13px;
-}
-.nav {
-    text-decoration: none;
-    color: white;
-    font-family:'Quicksand', sans-serif ;
+    margin: 0px 50px;
+    font-size: 15px;
 }
 .logo {
     width: 6%;
 }
+.searchform {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 .busqueda {
     justify-content: flex-end;
-    margin: 0px 0px 0px 315px;
+    align-items: end;
+    align-content: center;
+    margin-left: 600px;
 }
 .extremos {
     background-color: rgb(26, 3, 48);
+    width: 100%;
 }
 
 /* main de home  */ 
@@ -248,6 +251,19 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+.linkdeseries {
+    text-decoration: none;
+}
+.listadeseries {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+
 }
 .flecha {
     width: 10%;
@@ -290,13 +306,11 @@ h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: smaller;
 }
-/* detallepeliculas*/
-/* detalleseries*/
 /*favoritos*/ 
-/*generos*/ 
+
 /*detelladegeneros*/ 
 /*resultadodebusqueda*/ 
-/*footer*/
+
 /*Telefonos*/ 
 @media(max-width: 420px){
 
