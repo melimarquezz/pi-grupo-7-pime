@@ -6,26 +6,22 @@
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-    }
+}
     
-    #bodyy {
+#bodyy {
     background:url(../Imagenes/otrarym.jpg);
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-    }
-    
-    #container {
-    
+}
+#container {   
     width: 900px;
     height: max-content; 
     border-radius: 6px;
     box-shadow: 0 10px 30px #000;
     margin: 50px auto;
-    border: 1px solid #ffffff40;
-    
-    }
-    
+    border: 1px solid #ffffff40;  
+}
     .filter {
     -webkit-backdrop-filter: blur(15px);  
     backdrop-filter: blur(15px);
@@ -44,40 +40,27 @@
     }
 
     #titulop {
-        font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+    font-family:'Quicksand', sans-serif;
     color: rgb(242, 239, 239);
     text-align: center;
     font-size: x-large;
     }
 
-    .fa-solid {
-        justify-content: center;
+.fa-solid {
+justify-content: center;
     }
-    
-    
-    .parrafo {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+.parrafo {
+    font-family:'Quicksand', sans-serif;
     color: rgb(31, 32, 33);
-    
-    }
+}
 
-    .paf {
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Work Sans', sans-serif;
-        color: #f1f0f0;
-    }
-    
-    element.style {
-        padding: 10px 200px;
-    }
+.paf {
+    font-family:'Quicksand', sans-serif;
+    color: #f1f0f0;
+}
+element.style {
+    padding: 10px 200px;
+}
     
     #izq {
        text-align: center;
@@ -263,6 +246,7 @@ h1 {
     justify-content: space-between;
     width: 100%;
     padding: 0px;
+    margin: 0px;
 
 }
 .flecha {
@@ -307,7 +291,16 @@ h1 {
     font-size: smaller;
 }
 /*favoritos*/ 
-
+.h2 {
+    font-family:'Quicksand', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
+}
+#h1 {
+    font-weight: bolder ;
+    font-size: larger;
+}
 /*detelladegeneros*/ 
 /*resultadodebusqueda*/ 
 
