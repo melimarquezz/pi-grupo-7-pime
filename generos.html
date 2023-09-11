@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href= "./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    
-
 </head>
-<body id = "bodyyy">
+<body>
     <header class="contenedorpadre extremos">
         
         <img class="logo" src="./img/pimesplus.png" >
@@ -19,7 +16,7 @@
     <nav  class="hijados">
                 <ul class="hija">
                     <li class="todos"><a class="nav" href="./home.html"> Inicio </a></li>
-                    <li class="todos"><a class="nav" href="./generos.html"> Género </a></li>
+                    <li class="todos"><a class="nav" href="./generos.html"> Géneros </a></li>
                     <li class="todos"><a class="nav" href="./favoritos.html"> Favoritos </a></li> 
                 </ul>
     </nav>
@@ -27,66 +24,62 @@
         <form data="searchform">
             <input class="busqueda" type="search" name="busqueda" id="busqueda"placeholder="Título Personaje o Género" >
                 <link href="./resultadodebusqueda.html">
-        </form>
-        </div>    
+        </form>  
     </section>
 </header>
-    <main>
-        <h1 id = "genero" id = "titulo">Géneros</h1>
+<main class="medio">
+    <h1 id = "genero" id = "titulo">Géneros</h1>
 
-        <h2 id = "pys">PELICULAS</h2>
+    <h2 id = "pys">PELICULAS</h2>
+
+        <section  class="sectionmain" id = "section">
+           
+            <article class = "article">
+                <img class="portadas" src="./Imagenes/accion.webp" alt="Mad Max" class = "mad">
+                <a href="detalledegenero.html" class = "a">Accion</a>
+            </article>
+
+            <article class = "article">
+                <img class="portadas" src="./Imagenes/dylanficcion.jpg" alt="Dylan" class = "mad">
+                <a href="detalledegenero.html" class = "a">Ciencia Ficcion</a>
+            </article>
+
+            <article class = "article">
+                <img class="portadas" src="./Imagenes/aventura.jpg" alt="Rock" class = "mad">
+                <a href="detalledegenero.html" class = "a">Aventura</a>
+            </article>
+
+            <article class = "article">
+                <img class="portadas" src="./Imagenes/romance.png" alt="Yo antes de ti" class = "mad">
+                <a href="detalledegenero.html" class = "a">Romance</a>
+            </article>                
+        </section>
+
+        <h2 id = "pys">SERIES</h2>
 
         <section id = "section">
-           
-                <article class = "article">
-                    <img src="./Imagenes/accion.webp" alt="Mad Max" class = "mad">
-                    <a href="detalledegenero.html" class = "a">Accion</a>
-                </article>
 
-                <article class = "article">
-                    <img src="./Imagenes/dylanficcion.jpg" alt="Dylan" class = "mad">
-                    <a href="detalledegenero.html" class = "a">Ciencia Ficcion</a>
-                </article>
+            <article class = "article">
+                <img class="portadas" src="./Imagenes/comedia animada.webp" alt="Los Simpsons" class = "mad">
+                <a href="detalledegenero.html" class = "a">Comedia animada</a>
+            </article>
 
-                <article class = "article">
-                    <img src="./Imagenes/aventura.jpg" alt="Rock" class = "mad">
-                    <a href="detalledegenero.html" class = "a">Aventura</a>
-                </article>
+            <article class = "article">
+                <img class="portadas" src="./Imagenes/comedia cinematografica.webp" alt="Modern Family" class = "mad">
+                <a href="detalledegenero.html" class = "a">Comedia cinematográfica</a>
+            </article>
 
-                <article class = "article">
-                    <img src="./Imagenes/romance.png" alt="Yo antes de ti" class = "mad">
-                    <a href="detalledegenero.html" class = "a">Romance</a>
-                </article>                
-            </section>
+            <article class = "article">
+                <img class="portadas" class="portadas" src="./Imagenes/serie accion.jpg" alt="Vikingos" class = "mad">
+                <a href="detalledegenero.html" class = "a">Accion</a>
+            </article>
 
-            <h2 id = "pys">SERIES</h2>
-
-            <section id = "section">
-
-                <article class = "article">
-                    <img src="./Imagenes/comedia animada.webp" alt="Los Simpsons" class = "mad">
-                    <a href="detalledegenero.html" class = "a">Comedia animada</a>
-                </article>
-
-                <article class = "article">
-                    <img src="./Imagenes/comedia cinematografica.webp" alt="Modern Family" class = "mad">
-                    <a href="detalledegenero.html" class = "a">Comedia cinematográfica</a>
-                </article>
-
-                <article class = "article">
-                    <img src="./Imagenes/serie accion.jpg" alt="Vikingos" class = "mad">
-                    <a href="detalledegenero.html" class = "a">Accion</a>
-                </article>
-               
-                <article class = "article">
-                    <img src="./Imagenes/reality.jpg" alt="Shatk Tank" class = "mad">
-                    <a href="detalledegenero.html" class = "a">Reality Shows</a>
-                </article>
-            </section>
-
-
-        
-    </main>
+            <article class = "article">
+                <img class="portadas" src="./Imagenes/reality.jpg" alt="Shatk Tank" class = "mad">
+                <a href="detalledegenero.html" class = "a">Reality Shows</a>
+            </article>
+        </section>
+</main>
     <footer class="extremos footer">
         <section class="sectionfooter">
             <div class="divfoot">
@@ -102,4 +95,3 @@
         </section>
     </footer>
 </body>
-</html>
