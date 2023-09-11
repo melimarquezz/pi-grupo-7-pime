@@ -302,9 +302,37 @@ h1 {
     font-size: larger;
 }
 /*detelladegeneros*/ 
+.h3 {
+    font-family:'Quicksand', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.h2 {
+    font-family:'Quicksand', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.listadeseries {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
 /*resultadodebusqueda*/ 
 
 /*Telefonos*/ 
 @media(max-width: 420px){
+    
+/* detalleseries*/
+
 
 }
