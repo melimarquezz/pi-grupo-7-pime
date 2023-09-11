@@ -6,7 +6,8 @@
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-} 
+}
+    
 #bodyy {
     background:url(../Imagenes/otrarym.jpg);
     background-attachment: fixed;
@@ -21,30 +22,38 @@
     margin: 50px auto;
     border: 1px solid #ffffff40;  
 }
-.filter {
+    .filter {
     -webkit-backdrop-filter: blur(15px);  
     backdrop-filter: blur(15px);
     background-color: rgba(243,243,243,0.2);
-} 
-#titulo {
-    font-family:'Quicksand', sans-serif;
+    
+    }
+    
+    #titulo {
+        font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: rgb(17, 17, 17);
     text-align: center;
     font-size: x-large;
-}
-#titulop {
+    }
+
+    #titulop {
     font-family:'Quicksand', sans-serif;
     color: rgb(242, 239, 239);
     text-align: center;
     font-size: x-large;
     }
+
 .fa-solid {
 justify-content: center;
-}
+    }
 .parrafo {
     font-family:'Quicksand', sans-serif;
     color: rgb(31, 32, 33);
 }
+
 .paf {
     font-family:'Quicksand', sans-serif;
     color: #f1f0f0;
@@ -52,40 +61,50 @@ justify-content: center;
 element.style {
     padding: 10px 200px;
 }
-#izq {
-    text-align: center;
-}
-#der {
-    text-align: left;
-}
-#sub {
-    text-align: center;
-    background-color: #444;
-    color: #f1f0f0;
-    text-decoration: none;
-    width: 150px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-.linkp {
-    color: rgb(245, 241, 241);
-    text-decoration: none;
-}
-.link {
-    color: rgb(4, 4, 4);
-    text-decoration: none;
-}
-.div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#blanco {
-    color: #f1f0f0;
-}
-.Favoritos {
+    
+    #izq {
+       text-align: center;
+       
+    
+    }
+    
+    #der {
+        text-align: left;
+    }
+    
+    #sub {
+        text-align: center;
+        background-color: #444;
+        color: #f1f0f0;
+        text-decoration: none;
+        width: 150px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    
+    }
+    
+    .linkp {
+        color: rgb(245, 241, 241);
+        text-decoration: none;
+    }
+
+    .link {
+        color: rgb(4, 4, 4);
+        text-decoration: none;
+    }
+
+    .div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #blanco {
+        color: #f1f0f0;
+    }
+  .Favoritos {
     width: 50px;
-}
+  }
 
 /* GENERO */
 
@@ -95,36 +114,52 @@ element.style {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .article {
     margin-bottom: 10px;
     align-items: center;
     height: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
+    width: 40%;
+   
 }
+
 .a {
     background-color: #444;
     color: #f2eef2;
     text-decoration: none;
     padding: 10px;
     margin-top: 10px;
-    font-family:'Quicksand', sans-serif;
-    font-size: larger;
 }
+
+.mad {
+    width: 380px;
+    margin-bottom: 30px;
+    align-items: center;
+    border-width: 10px;
+    border-style: double;
+    border-color: #a00fa0;
+}
+#bodyyy {
+    
+    background-color: #000;
+   
+}
+
 #genero {
     text-align: center;
     text-decoration-line: double;
-    color: white;
+    color: #a00fa0;
     padding: 10px;
 }
+
 #pys {
-    background-color: #444;
+    background-color: #eae4ea86;
     text-align: center;
     box-sizing: border-box;
-    font-family:'Quicksand', sans-serif;
 }
-
 /* header */ 
 .contenedorpadre {
     display: flex;
@@ -255,7 +290,6 @@ h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: smaller;
 }
-
 /*favoritos*/ 
 .h2 {
     font-family:'Quicksand', sans-serif;
