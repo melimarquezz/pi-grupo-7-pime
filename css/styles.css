@@ -1,0 +1,309 @@
+
+/* Detalle de pelis y series */
+
+#body {
+    background:url(../Imagenes/spider.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+    
+#bodyy {
+    background:url(../Imagenes/otrarym.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+#container {   
+    width: 900px;
+    height: max-content; 
+    border-radius: 6px;
+    box-shadow: 0 10px 30px #000;
+    margin: 50px auto;
+    border: 1px solid #ffffff40;  
+}
+.filter {
+    -webkit-backdrop-filter: blur(15px);  
+    backdrop-filter: blur(15px);
+    background-color: rgba(243,243,243,0.2);
+    
+}
+#titulo {
+    font-family:'Quicksand', sans-serif;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: x-large;
+}
+#titulop {
+    font-family:'Quicksand', sans-serif;
+    color: rgb(242, 239, 239);
+    text-align: center;
+    font-size: x-large;
+}
+.fa-solid {
+justify-content: center;
+    }
+.parrafo {
+    font-family:'Quicksand', sans-serif;
+    color: rgb(31, 32, 33);
+}
+.paf {
+    font-family:'Quicksand', sans-serif;
+    color: #f1f0f0;
+}
+element.style {
+    padding: 10px 200px;
+}
+#izq {
+    text-align: center;
+}
+#der {
+    text-align: left;
+}
+#sub {
+    text-align: center;
+    background-color: #444;
+    color: #f1f0f0;
+    text-decoration: none;
+    width: 150px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.linkp {
+    color: rgb(245, 241, 241);
+    text-decoration: none;
+}
+.link {
+    color: rgb(4, 4, 4);
+    text-decoration: none;
+}
+.div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#blanco {
+    color: #f1f0f0;
+}
+.Favoritos {
+    width: 50px;
+}
+
+/* GENERO */
+
+#section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article {
+    margin-bottom: 10px;
+    align-items: center;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.a {
+    background-color: #444;
+    color: #f2eef2;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    font-family:'Quicksand', sans-serif;
+    font-size: larger;
+}
+#genero {
+    text-align: center;
+    text-decoration-line: double;
+    color: white;
+    padding: 10px;
+}
+
+#pys {
+    background-color: #444;
+    text-align: center;
+    box-sizing: border-box;
+    font-family:'Quicksand', sans-serif;
+}
+
+/* header */ 
+.contenedorpadre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.hijados {
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family:'Quicksand', sans-serif ;
+}
+.hija {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+.todos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+    font-size: 15px;
+}
+.logo {
+    width: 6%;
+}
+.searchform {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.busqueda {
+    justify-content: flex-end;
+    align-items: end;
+    align-content: center;
+    margin-left: 600px;
+}
+.extremos {
+    background-color: rgb(26, 3, 48);
+    width: 100%;
+}
+
+/* main de home  */ 
+.medio {
+    background-color: rgb(53, 22, 82);
+}
+h1 {
+    margin: 0px;
+    color: white;
+    font-family:'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    margin: 5px;
+}
+.portadas {
+    border-radius: 10px;
+    width: 300px;
+    height: 175px;
+    border:5px solid white;
+    margin: 5px;
+}
+.series {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.linkdeseries {
+    text-decoration: none;
+}
+.listadeseries {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+}
+.flecha {
+    width: 10%;
+    height: 15%;
+    background-color: transparent;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.divfoot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.footerlogo {
+    align-items: center;
+    width: 100px;
+    margin: 0px 0px 0px 170px;
+}
+.listitafinal {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.infoadicional {
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: smaller;
+}
+
+/*favoritos*/ 
+.h2 {
+    font-family:'Quicksand', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
+}
+#h1 {
+    font-weight: bolder ;
+    font-size: larger;
+}
+/*detelladegeneros*/ 
+.h3 {
+    font-family:'Quicksand', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.h2 {
+    font-family:'Quicksand', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.listadeseries {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*resultadodebusqueda*/ 
+
+/*Telefonos*/ 
+@media(max-width: 420px){
+    
+/* detalleseries*/
+
+
+}
