@@ -129,6 +129,39 @@ element.style {
     font-family:'Quicksand', sans-serif;
 }
 
+/* detalle género */
+.lige1 {
+    margin: 0px 90px;
+}
+.lige2 {
+    margin: 0px 80px 0px 0px;
+}
+.lige3 {
+    margin: 0px 120px 0px 0px;
+}
+.lige4 {
+    margin: 0px 100px 0px 0px;
+}
+.pdes {
+    margin: 0px;
+}
+
+/*busqueda*/
+.bodyb {
+    height: max-content;
+}
+.mainbusqueda {
+    height: max-content;
+}
+.busquedalistas {
+    margin-bottom: 30px;
+}
+#resultadosdelabusqueda {
+ margin-bottom: 30px;
+}
+.listafinalbusqueda {
+    
+}
 /* header */ 
 .contenedorpadre {
     display: flex;
@@ -301,7 +334,10 @@ h1 {
 
 /*Telefonos*/ 
 @media(max-width: 420px){
-    
+.bodymedias { 
+    max-width: 390px; 
+    padding: 0%;
+}
 /* detalleseries*/
 
 

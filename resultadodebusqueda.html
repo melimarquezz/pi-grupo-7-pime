@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bodyb">
     <header class="contenedorpadre extremos">
         
         <img class="logo" src="./img/pimesplus.png" >
@@ -22,15 +22,43 @@
                 </ul>
             </nav>
                 <section class="hijatres">
-                    <form data="searchform">
-                        <input class="busqueda" type="search" name="busqueda" id="busqueda"placeholder="Título Personaje o Género" >
-                        <link href="./resultadodebusqueda.html">
+                    <form data="searchform" action= "./resultadodebusqueda.html" method="get">
+                        <input class="busqueda" type="search" name="busqueda" id="busqueda" value= "Marvel" >
                     </form>                         
                 </section>            
     </header>
-    <main></main>
-    <footer>
-        
+    <main class="medio mainbusqueda" >
+        <section class="sectionmain">
+            <h1 id="resultadosdelabusqueda"> Resultados de su búsqueda </h1>
+         </section>
+        <section class="sectionmain">     
+            <article class="series">
+                    <ul class="listadeseries busquedalistas">
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detallepelicula.html"> <img class="portadas" src="./img/avengers.webp"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detallepelicula.html"> <img class="portadas" src="./img/spiderman.jpg"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/im.jpg"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/dare.png"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/loki.jpg"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/thor.webp"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/black.jpg"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/end.webp"></a>  </li>
+                    </ul>
+            </article>  
+        </section>
+    </main>
+    <footer class="extremos footer">
+        <section class="sectionfooter">
+            <div class="divfoot">
+                <img class="footerlogo" src="./img/pimesplus.png">
+            </div>
+            <div>
+                <ul class="listitafinal">
+                    <li class="infoadicional "> Realizado por: Melina Márquez y Pilar Torelli</li>
+                    <li class="infoadicional"> Pimes Plus es un servicio con una disponibilidad de contenido gratuito.</li>
+                    <li class="infoadicional listafinalbuqueda"> Pimes Plus </li>
+                </ul>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
