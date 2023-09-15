@@ -10,26 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="bodyb">
-    <header class="contenedorpadre extremos">
-        
+    <header class="contenedorpadre extremos">      
         <img class="logo" src="./img/pimesplus.png" >
-    
-            <nav  class="hijados">
-                <ul class="hija">
-                    <li class="todos"><a class="nav" href="./home.html"> Inicio </a></li>
-                    <li class="todos"><a class="nav" href="./generos.html"> Géneros </a></li>
-                    <li class="todos"><a class="nav" href="./favoritos.html"> Favoritos </a></li> 
-                </ul>
-            </nav>
-                <section class="hijatres">
-                    <form data="searchform" action= "./resultadodebusqueda.html" method="get">
-                        <input class="busqueda" type="search" name="busqueda" id="busqueda" value= "Marvel" >
-                    </form>                         
-                </section>            
-    </header>
+<nav  class="hijados">
+            <ul class="hija">
+                <li class="todos"><a class="nav" href="./home.html"> Inicio </a></li>
+                <li class="todos"><a class="nav" href="./generos.html"> Géneros </a></li>
+                <li class="todos"><a class="nav" href="./favoritos.html"> Favoritos </a></li> 
+            </ul>
+</nav>
+<section class="hijatres">
+    <form data="searchform" action= "./resultadodebusqueda.html" method="get">
+        <input class="busqueda" type="search" name="busqueda" id="busqueda" placeholder="Título Personaje o Género" >
+    </form>               
+</section>
+</header>
     <main class="medio mainbusqueda" >
         <section class="sectionmain">
-            <h1 id="resultadosdelabusqueda"> Resultados de su búsqueda </h1>
+            <h1 id="resultadosdelabusqueda"> Resultados de su búsqueda "Marvel" </h1>
+            <p> Ese título no existe </p>
          </section>
         <section class="sectionmain">     
             <article class="series">
@@ -42,6 +41,8 @@
                         <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/thor.webp"></a>  </li>
                         <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/black.jpg"></a>  </li>
                         <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/end.webp"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/Wakanda-1.jpg"></a>  </li>
+                        <li class="busquedalistas"> <a class="linkdeseries" href="./detalleserie.html"> <img class="portadas" src="./img/shehulk.webp"></a>  </li>
                     </ul>
             </article>  
         </section>
