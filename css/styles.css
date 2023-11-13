@@ -11,6 +11,22 @@
     background-position: center;
     margin: 0px;
 }
+#rick {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-left: 35%;
+}
+#spiderm {
+    width: 30%;
+    height: 50%; 
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    margin-left: 35%;
+}
 #container {   
     width: 900px;
     height: max-content; 
@@ -92,7 +108,7 @@ element.style {
 }
 /* GENERO */
 
-#section {
+#peliculas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -251,6 +267,26 @@ element.style {
     width: 100%;
     padding: 0px;
     margin: 0px;
+}
+.pili{
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+padding: 0px;
+margin: 0px;
+}
+.meli{
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+padding: 0px;
+margin: 0px;
 }
 .section-main {
     list-style-type: none;

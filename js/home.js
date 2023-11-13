@@ -1,5 +1,5 @@
 /* El ENDPOINT de la API */
-let apikey= `86a6f1e422ad71ec4aa878598f090973`
+let apikey= `86a6f1e422ad71ec4aa878598f090973`;
 let pelis= `https://api.themoviedb.org/3/movie/now_playing?api_key=${apikey}`;
 let series= `https://api.themoviedb.org/3/tv/airing_today?api_key=${apikey}`;
 let seriespop= `https://api.themoviedb.org/3/tv/popular?api_key=${apikey}`;
