@@ -127,6 +127,7 @@ element.style {
     height: 10%;
     display: flex;
     flex-direction: column;
+    margin: 5px;
 }
 
 .a {
@@ -370,6 +371,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.329);
     border-radius: 30px;
     min-width: 240px;
+    height: 250px;
 }
 .flecha {
     width: 10%;
@@ -559,8 +561,6 @@ h1 {
     }
     .bodyy {
         height: 300px;
-    }
-    #body {
     }
     .mediaseries {
         padding: 0px;
