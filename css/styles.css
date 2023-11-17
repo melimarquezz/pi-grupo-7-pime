@@ -1,15 +1,10 @@
 /* Detalle de pelis y series */
 
 #body {
-    background:url(../img/spider.jpg);
-    background-position: center;
-    margin: 0px;
+    background-color: rgb(53, 22, 82);
 }
 #bodyy {
-    background:url(../img/otrarym.jpg);
-    background-repeat: no-repeat;      
-    background-position: center;
-    margin: 0px;
+    background-color: rgb(53, 22, 82);; 
 }
 #rick {
     width: 30%;
@@ -28,6 +23,14 @@
     margin-left: 35%;
 }
 #container {   
+    width: 900px;
+    height: max-content; 
+    border-radius: 6px;
+    box-shadow: 0 10px 30px #000;
+    margin: 50px auto;
+    border: 1px solid #ffffff40;  
+}
+#container2 {   
     width: 900px;
     height: max-content; 
     border-radius: 6px;
@@ -96,12 +99,15 @@ element.style {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 #blanco {
     color: #f1f0f0;
 }
-.Favoritos {
-    width: 50px;
+.Recomendacion {
+    width: 130px;
+    text-align: center;
+    
 }
 .mediaseries {
     padding: 10px 200px
