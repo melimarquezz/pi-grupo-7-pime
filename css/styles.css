@@ -146,21 +146,11 @@ element.style {
     padding: 10px;
 }
 
-#pys {
+.pys {
     background-color: #444;
     text-align: center;
     box-sizing: border-box;
     font-family:'Quicksand', sans-serif;
-}
-.generoportadas {
-    border-radius: 10px;
-    border:5px solid white;
-    margin: 5px;
-    width: 100%;
-    height: 125px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 200px;
 }
 /*busqueda*/
 .bodyb {
@@ -181,14 +171,19 @@ element.style {
     border-radius: 30px;
     min-width: 240px;
 }
-#noexiste {
-    display: none;
+.noexiste {
+    display: block;
     margin: 0px 0px 15px 5px;
+    margin: 0px;
+    color: white;
+    font-family:'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: medium;
 }
 .sectionbusqueda {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     padding: 0px;
@@ -270,6 +265,16 @@ element.style {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.sectionmain2 {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     padding: 0px;
@@ -336,7 +341,16 @@ h1 {
 .portadas {
     border-radius: 10px;
     width: 100%;
-    height: 105px;
+    height: 200px;
+    border:5px solid rgb(53, 22, 82);
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.generoportadas {
+    border-radius: 10px;
+    width: 90%;
+    height: 200px;
     border:5px solid rgb(53, 22, 82);
     margin: 5px;
     display: flex;
@@ -371,7 +385,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.329);
     border-radius: 30px;
     min-width: 240px;
-    height: 250px;
+    height: 300px;
 }
 .flecha {
     width: 10%;
@@ -430,7 +444,14 @@ h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: smaller;
 }
-
+.h1{
+    margin: 0px;
+    color: white;
+    font-family:'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size:large;
+    margin: 5px;
+}
 /*favoritos*/ 
 .h2 {
     font-family:'Quicksand', sans-serif;
@@ -512,6 +533,10 @@ h1 {
     margin: 0px;
 }
 .peliculasdg {
+    padding: 0px 0px 25px 0px;
+    margin: 5px;
+}
+.seriesdg {
     padding: 0px 0px 25px 0px;
     margin: 5px;
 }
