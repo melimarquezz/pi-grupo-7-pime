@@ -23,8 +23,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id_serie}?api_key=${apikey}`)
       
         
     }
-    contenedor2.innerHTML +=  `<section>
-               
+    contenedor2.innerHTML +=  `             
     <article>
         <h1 id = "titulo">${data.original_name}</h1>
         <img id = "rick" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="rick">                    
@@ -39,15 +38,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id_serie}?api_key=${apikey}`)
 
         <p class = "parrafo" id = "sub"> Sinopsis: </p>
         <p class = "parrafo mediaseries" id = "izq">${data.overview}</h3>
-        
-        
-        
-    </article>
-
-
-</section>`;
-
-
+    </article>`;
 
     return data;
 })
@@ -57,13 +48,14 @@ fetch(`https://api.themoviedb.org/3/tv/${id_serie}?api_key=${apikey}`)
 })
 
 // Ver recomendaciones
-
+let verRecomendaciones = document.querySelector('.Recomendacion2')
+let recomendacionesDisplay = document.querySelector('#container2')
 verRecomendaciones.addEventListener('click',function(){
-    let url =  `https://api.themoviedb.org/3/movie/${id_pelicula}/recommendations?api_key=${apikey}`;
+    let url =  `https://api.themoviedb.org/3/tv/${id_serie}/recommendations?api_key=${apikey}`;
     console.log(url);
     fetch(url)
         .then(function(response){
-            return res.json();
+            return response.json();
         })
         .then(function (data) {
             console.log(data);
@@ -71,26 +63,27 @@ verRecomendaciones.addEventListener('click',function(){
             recomendacionesDisplay.style.display = 'block';
 
             let recomendaciones = data.results;
-            let lista = "";
-
+            let lista = document.querySelector(".vacio2");
+            
             for (let i = 0; i < 5; i++){
-                lista += ` <li class = "...">
-                <a href = ./detalleserie.html?id=$recomedaciones[i].id}>
-                <img id = "spiderm" src = "https://image.tmdb.org/t/p/w500/${recomendaciones[i].poster_path}" alt = "${recomendaciones[i].title}">
-
-                ${recomendaciones[i].name} </a> </li>`;
+                lista.innerHTML += `<a href = "./detalleeserie.html?id=$recomedaciones[i].id}">
+                <img class="recomendaciones" src="https://image.tmdb.org/t/p/w500/${recomendaciones[i].poster_path}" 
+                alt = "${recomendaciones[i].title}">`;
 
             }
 
-            recomendaciomesDisplay.innerHTML = lista;
+            recomendacionesDisplay.innerHTML = lista;
 
             return data;
 
 
     
         })
-})
-            .catch(function (error) {
-                console.log(error);
-                return error;
-            })
+        .catch(function (error) {
+            console.log(error);
+            return error;
+        })
+        })
+        
+       
+            

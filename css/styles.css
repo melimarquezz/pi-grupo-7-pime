@@ -1,5 +1,41 @@
 /* Detalle de pelis y series */
 
+.recomendaciones{
+    border-radius: 10px;
+    height: 150px;
+    border:5px solid rgb(53, 22, 82);
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.vacio{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    padding: 0px;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 30px;
+    min-width: 240px;
+    height: 250px;
+}
+.vacio2{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    padding: 0px;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 30px;
+    min-width: 240px;
+    height: 250px;
+}
 #body {
     background-color: rgb(53, 22, 82);
 }
@@ -105,6 +141,11 @@ element.style {
     color: #f1f0f0;
 }
 .Recomendacion {
+    width: 130px;
+    text-align: center;
+    
+}
+.Recomendacion2 {
     width: 130px;
     text-align: center;
     
@@ -515,6 +556,10 @@ h1 {
     padding: 0px 0px 25px 0px;
     margin: 5px;
 }
+.seriesdg{
+    padding: 0px 0px 25px 0px;
+    margin: 5px;
+}
 /*Telefonos*/ 
 @media(max-width: 390px){
     .bodymedias { 
@@ -565,4 +610,8 @@ h1 {
     .mediaseries {
         padding: 0px;
     }
+    }
+
+    #imagenFooter{
+        width: 5%;
     }

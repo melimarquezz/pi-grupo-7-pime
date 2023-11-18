@@ -1,37 +1,59 @@
-/* El ENDPOINT de la API */
-let apikey= `86a6f1e422ad71ec4aa878598f090973`;
-//conecto a la barra de busqueda
-let qs = location.search; 
+// abro el cargador EXTENSION
+let page = 1;
+let cargador = document.querySelector(".cargador");
+cargador.style.display = "block";
+
+// AGREGADO PARA LA CONSIGNA
+let apikey = `86a6f1e422ad71ec4aa878598f090973`;
+let qs = location.search;
 let qsObj = new URLSearchParams(qs);
-let buscador = qsObj.get("buscador")
+let buscador = qsObj.get(`busqueda`);
+let busqueda = `https://api.themoviedb.org/3/search/movie?api_key=${apikey}&query=${buscador}`;
+let bus = document.querySelector(".sectionbusqueda");
+let noE = document.querySelector(".noexisteosi");
+let cuerpo = document.querySelector(".sectionmain2");
 
-let busqueda = `https://api.themoviedb.org/3/search/movie?api_key=${apikey}&query=${buscador}`
+// AGREGADO PARA LA CONSIGNA: Muestra el cargador antes de realizar la búsqueda
+cargador.style.display = "block";
 
-fetch(endpoint)
-.then(function (res) {
-    return res.json();
-})
-.then(function (data) {
-    console.log(data.results);
+fetch(busqueda)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        // AGREGADO PARA LA CONSIGNA: Oculta el cargador después de obtener los resultados
+        cargador.style.display = "none";
 
-    let arrayDePersonajes = data.results;
-    let seccion = document.querySelector('.container');
-
-    let allCharacters = "";
-
-    for(let i=0; i<arrayDePersonajes.length; i++){
-        allCharacters += `<article>
-                            <img src=${arrayDePersonajes[i].image} alt='Imagen sobre ${arrayDePersonajes[i].name}'>
-                            <p>Name: <a href="./detalle.html?idPersonaje=${arrayDePersonajes[i].id}"> ${arrayDePersonajes[i].name} </a></p>
-                            <p>Status: ${arrayDePersonajes[i].status} </p>
-                        </article>`
+        let resultadosbusqueda = data.results;
+        let resultados = "";
+        let totalresults = data.total_results;
+        if (totalresults == 0) {
+            noE.innerHTML = `<p class="noexiste"> No hay resultados para: ${buscador} </p>`;
+        } else {
+            bus.innerHTML += `<h1 id="resultadosdelabusqueda"> Resultados de su búsqueda: "${buscador}"`;
+            for (let index = 0; index < resultadosbusqueda.length; index++) {
+                if (resultadosbusqueda.original_title != null || resultadosbusqueda[index].poster_path != null) {
+                    resultados += `<article class="listadeseries">
+                    <a class="linkdeseries tamaño" href="./detallepelicula.html?id=${resultadosbusqueda[index].id}"> <img class="portadas"
+                        src="https://image.tmdb.org/t/p/w500/${resultadosbusqueda[index].poster_path}"></a> </li>
+                    <ul class="listadedatos">
+                    <li class="tituloestreno">
+                        <p class="tituloestreno nombre"> ${resultadosbusqueda[index].title} </p>
+                    </li>
+                    <li class="tituloestreno">
+                        <p class="tituloestreno"> Fecha de estreno: ${resultadosbusqueda[index].release_date}</p>
+                    </li>
+                    </ul>
+                    </article>`;
+                }
+            }
+            bus.innerHTML += resultados;
         }
-
-    seccion.innerHTML = allCharacters;
-
-    return data;
-})
-.catch(function (error) {
-    console.log(error);
-    return error;
-});
+        return data;
+    })
+    // AGREGADO PARA LA CONSIGNA: Oculta el cargador en caso de error
+    .catch(function (error) {
+        cargador.style.display = "none";
+        console.log(error);
+        return error;
+    });
